@@ -12,7 +12,9 @@
       "Bash(grep -E \"pixel|$f\")",
       "Bash(done)",
       "Bash(gh auth:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)"
     ]
   }
 }
