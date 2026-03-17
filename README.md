@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# MetalSea Website
 
-# Run and deploy your AI Studio app
+Premium aluminum cabinet door frames — designed and manufactured in Richmond Hill, Ontario.
 
-This contains everything you need to run your app locally.
+**Live site:** https://soloceo.github.io/metalsea-redesign/
 
-View your app in AI Studio: https://ai.studio/apps/1d61f354-e165-41d1-bea9-729419858f23
+## Tech Stack
+
+- React 19 + TypeScript
+- Vite + Tailwind CSS v4
+- Framer Motion animations
+- Dark / Light theme support
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+Open http://localhost:3000
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+## Content Guide
+
+See [CONTENT-GUIDE.md](CONTENT-GUIDE.md) for how to change images and text.
