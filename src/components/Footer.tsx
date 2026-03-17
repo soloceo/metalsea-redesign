@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="space-y-8">
             <Link to="/" className="text-2xl font-display font-medium tracking-tight text-text-primary flex items-center gap-3">
               <img
-                src={theme === 'dark' ? '/logo-white.svg' : '/logo-black.svg'}
+                src={`${import.meta.env.BASE_URL}${theme === 'dark' ? 'logo-white.svg' : 'logo-black.svg'}`}
                 alt="MetalSea"
                 className="h-7 w-auto"
               />

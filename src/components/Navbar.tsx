@@ -58,7 +58,7 @@ export default function Navbar() {
 
           <Link to="/" className="text-2xl font-display font-medium tracking-tight z-50 relative flex items-center gap-3 group text-text-primary">
             <img
-              src={theme === 'dark' ? '/logo-white.svg' : '/logo-black.svg'}
+              src={`${import.meta.env.BASE_URL}${theme === 'dark' ? 'logo-white.svg' : 'logo-black.svg'}`}
               alt="MetalSea"
               className="h-7 w-auto transition-opacity duration-300"
             />
