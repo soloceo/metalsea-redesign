@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm install:*)",
+      "Bash(cp \"/Users/dayofdesign/Downloads/Logo W.svg\" \"/Users/dayofdesign/Library/CloudStorage/GoogleDrive-andy@dayofdesign.ca/Shared drives/DAY OF DESIGN INC./DODI 2023/Clients Design File/Metal Sea/metalsea-redesign/public/favicon.svg\")",
+      "Bash(cp \"/Users/dayofdesign/Downloads/Logo W.svg\" \"/Users/dayofdesign/Library/CloudStorage/GoogleDrive-andy@dayofdesign.ca/Shared drives/DAY OF DESIGN INC./DODI 2023/Clients Design File/Metal Sea/metalsea-redesign/public/logo-white.svg\")",
+      "Bash(cp \"/Users/dayofdesign/Downloads/Logo B.svg\" \"/Users/dayofdesign/Library/CloudStorage/GoogleDrive-andy@dayofdesign.ca/Shared drives/DAY OF DESIGN INC./DODI 2023/Clients Design File/Metal Sea/metalsea-redesign/public/logo-black.svg\")",
+      "WebSearch",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.metalsea.ca)",
+      "Bash(grep -E \"pixel|$f\")",
+      "Bash(done)",
+      "Bash(gh auth:*)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

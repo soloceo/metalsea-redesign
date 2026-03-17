@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetalSea | Precision Aluminum Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        :root {
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+        
+        body {
+            font-family: var(--font-sans);
+            background-color: #09090b; /* zinc-950 */
+            color: #fafafa; /* zinc-50 */
+        }
+        
+        .font-serif { font-family: var(--font-serif); }
+        .font-mono { font-family: var(--font-mono); }
+        
+        .text-accent-blue { color: #3b82f6; }
+        .bg-accent-blue { background-color: #3b82f6; }
+        .border-accent-blue { border-color: #3b82f6; }
+        
+        .bg-midnight-950 { background-color: #09090b; }
+        .bg-midnight-900 { background-color: #18181b; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/90 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <a href="#" class="text-2xl font-serif font-bold tracking-tighter text-white flex items-center gap-2">
+                MetalSea <span class="text-xs font-mono font-normal text-zinc-500 tracking-widest mt-1 hidden sm:block">| SYSTEMS</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#" class="text-white text-xs font-mono uppercase tracking-widest hover:text-white transition-colors">Home</a>
+                <a href="#" class="text-zinc-400 text-xs font-mono uppercase tracking-widest hover:text-white transition-colors">About</a>
+                <a href="#" class="text-zinc-400 text-xs font-mono uppercase tracking-widest hover:text-white transition-colors">Professionals</a>
+                <a href="#" class="text-zinc-400 text-xs font-mono uppercase tracking-widest hover:text-white transition-colors">Gallery</a>
+                <a href="#" class="text-zinc-400 text-xs font-mono uppercase tracking-widest hover:text-white transition-colors">Contact</a>
+                <a href="#" class="px-5 py-2 border border-white/20 text-white text-xs font-mono uppercase tracking-widest hover:bg-white hover:text-zinc-950 transition-colors">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex flex-col pt-20 border-b border-white/10">
+            <!-- 
+                IMAGE REPLACEMENT INSTRUCTION:
+                Change the 'src' attribute below to your desired image URL.
+                Example: src="images/my-hero-image.jpg"
+            -->
+            <div class="absolute inset-0 z-0">
+                <img
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2000&auto=format&fit=crop"
+                    alt="Modern Architecture"
+                    class="w-full h-full object-cover opacity-60"
+                />
+                <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/90 via-zinc-900/60 to-zinc-950"></div>
+            </div>
+
+            <div class="flex-grow flex flex-col justify-center container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="h-px w-12 bg-blue-500/50"></span>
+                        <span class="font-mono text-blue-500 text-sm">Est. 2023 • Richmond Hill, ON</span>
+                    </div>
+                    
+                    <h1 class="text-6xl md:text-8xl lg:text-9xl font-serif font-medium tracking-tighter mb-8 text-white leading-[0.9]">
+                        Precision.<br />
+                        <span class="text-zinc-600">Purity.</span><br />
+                        <span class="text-blue-500">Prestige.</span>
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-zinc-400 max-w-xl font-light leading-relaxed mb-12 border-l border-blue-500/30 pl-6">
+                        Enhancing the texture of spaces through high-quality aluminum cabinet door frames and custom interior solutions.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-6">
+                        <a href="#" class="group relative px-8 py-4 bg-blue-500 text-white font-mono text-sm font-bold uppercase tracking-wider overflow-hidden inline-flex items-center gap-2">
+                            <span class="relative z-10 flex items-center gap-2">View Projects <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                        </a>
+                        <a href="#" class="px-8 py-4 border border-white/20 text-white font-mono text-sm font-bold uppercase tracking-wider hover:bg-white/5 transition-all">
+                            Configure Model
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Stats -->
+            <div class="border-t border-white/10 bg-zinc-950/50 backdrop-blur-sm">
+                <div class="container mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div>
+                        <span class="block font-mono text-blue-500 text-xs mb-1">Material</span>
+                        <span class="text-white font-medium">High-Strength Aluminum</span>
+                    </div>
+                    <div>
+                        <span class="block font-mono text-blue-500 text-xs mb-1">Finish</span>
+                        <span class="text-white font-medium">Anodized / Powder Coat</span>
+                    </div>
+                    <div>
+                        <span class="block font-mono text-blue-500 text-xs mb-1">Application</span>
+                        <span class="text-white font-medium">Residential & Commercial</span>
+                    </div>
+                    <div>
+                        <span class="block font-mono text-blue-500 text-xs mb-1">Origin</span>
+                        <span class="text-white font-medium">Made in Canada</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="py-24 bg-zinc-950 relative border-b border-white/10">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/10 pb-8">
+                    <div>
+                        <span class="font-mono text-blue-500 mb-2 block">System Capabilities</span>
+                        <h2 class="text-4xl md:text-5xl font-serif text-white">Engineered for Excellence</h2>
+                    </div>
+                    <p class="text-zinc-400 max-w-md mt-6 md:mt-0">
+                        Our modular aluminum systems offer limitless design possibilities, combining structural integrity with refined aesthetics.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
+                    <!-- Feature 1 -->
+                    <div class="bg-zinc-950 p-8 group hover:bg-zinc-900 transition-colors">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="p-3 bg-zinc-900 rounded-sm text-white group-hover:bg-blue-500 transition-colors">
+                                <i data-lucide="layout-grid" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-mono text-xs text-zinc-600">01</span>
+                        </div>
+                        <h3 class="text-xl font-serif text-white mb-3">Aluminum Frame Series</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Distinct frame profiles, each available in a range of refined finishes.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-zinc-950 p-8 group hover:bg-zinc-900 transition-colors">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="p-3 bg-zinc-900 rounded-sm text-white group-hover:bg-blue-500 transition-colors">
+                                <i data-lucide="layers" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-mono text-xs text-zinc-600">02</span>
+                        </div>
+                        <h3 class="text-xl font-serif text-white mb-3">Glass Panel Inserts</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Various glass types and tints to complement any design vision.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-zinc-950 p-8 group hover:bg-zinc-900 transition-colors">
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="p-3 bg-zinc-900 rounded-sm text-white group-hover:bg-blue-500 transition-colors">
+                                <i data-lucide="box" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-mono text-xs text-zinc-600">03</span>
+                        </div>
+                        <h3 class="text-xl font-serif text-white mb-3">Wood Panel Inserts</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">Diverse wood options offering warmth, texture, and character.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Split Section -->
+        <section class="border-b border-white/10">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <!-- 
+                    IMAGE REPLACEMENT INSTRUCTION:
+                    Change the 'src' attribute below to your desired image URL.
+                -->
+                <div class="relative h-[60vh] lg:h-auto border-b lg:border-b-0 lg:border-r border-white/10 overflow-hidden group">
+                    <img
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop"
+                        alt="Premium Interior"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 mix-blend-luminosity"
+                    />
+                    <div class="absolute inset-0 bg-blue-500/10 mix-blend-overlay"></div>
+                </div>
+                
+                <div class="p-12 lg:p-24 flex flex-col justify-center bg-zinc-950">
+                    <span class="font-mono text-blue-500 mb-4 block">Design Philosophy</span>
+                    <h2 class="text-4xl md:text-6xl font-serif text-white mb-8 leading-tight">
+                        Where Function<br />Meets Form.
+                    </h2>
+                    <p class="text-zinc-400 text-lg leading-relaxed mb-12">
+                        We believe that the finest details make the boldest statements. Our aluminum frames are designed to be minimal yet substantial, providing the perfect canvas for glass, wood, and other premium materials.
+                    </p>
+                    <a href="#" class="inline-flex items-center gap-3 text-white font-mono uppercase tracking-widest hover:text-blue-500 transition-colors group">
+                        Read Our Story <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail Showcase -->
+        <section class="py-24 bg-zinc-950">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- 
+                        IMAGE REPLACEMENT INSTRUCTION:
+                        Change the 'src' attribute below to your desired image URL.
+                    -->
+                    <div class="relative aspect-video md:aspect-auto md:h-[500px] overflow-hidden rounded-sm group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" 
+                            alt="Frame Detail" 
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <span class="font-mono text-blue-500 mb-2 block text-xs">01. Precision Joinery</span>
+                            <h3 class="text-2xl font-serif text-white">Engineered for Perfection</h3>
+                        </div>
+                    </div>
+
+                    <!-- 
+                        IMAGE REPLACEMENT INSTRUCTION:
+                        Change the 'src' attribute below to your desired image URL.
+                    -->
+                    <div class="relative aspect-video md:aspect-auto md:h-[500px] overflow-hidden rounded-sm group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1600566753086-00f18cf6b3ea?q=80&w=800&auto=format&fit=crop" 
+                            alt="Sliding Systems" 
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <span class="font-mono text-blue-500 mb-2 block text-xs">02. Smooth Operation</span>
+                            <h3 class="text-2xl font-serif text-white">Seamless Motion</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 border-t border-white/10 pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="space-y-6">
+                    <a href="#" class="text-2xl font-serif font-bold tracking-tighter text-white">MetalSea</a>
+                    <p class="text-zinc-400 text-sm leading-relaxed max-w-xs">
+                        Precision-crafted aluminum frames and custom interior solutions designed to elevate residential and commercial spaces.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-serif text-lg font-medium mb-6 text-white">Contact</h4>
+                    <ul class="space-y-4 text-sm text-zinc-400">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-4 h-4 mt-1"></i>
+                            <span>Unit 6 & 7, 50 West Pearce St.<br />Richmond Hill, ON, L4B1C5</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <a href="tel:6478952155" class="hover:text-white transition-colors">(647) 895-2155</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <a href="mailto:info@metalsea.ca" class="hover:text-white transition-colors">info@metalsea.ca</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-500">
+                <p>&copy; 2024 MetalSea. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
