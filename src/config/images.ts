@@ -16,13 +16,13 @@ const base = import.meta.env.BASE_URL;
 export const images = {
   // ── HOME PAGE ──────────────────────────────────────────────
   // Hero background (full-screen behind "Precision. Purity. Prestige.")
-  hero: `${base}gallery/1.png`,
+  hero: `${base}photos/stylish-dining-room.jpg`,
 
-  // Detail showcase left image (below Technical Specifications grid)
-  detailFrame: `${base}gallery/8.png`,
+  // Detail showcase left image (01. Precision Joinery)
+  detailFrame: `${base}photos/kitchen-drawers-pulled-out-easy-access-space-organization.jpg`,
 
-  // Detail showcase right image (beside detailFrame)
-  slidingDoors: `${base}gallery/9.png`,
+  // Detail showcase right image (02. Seamless Motion)
+  slidingDoors: `${base}photos/minimalist-kitchen-interior-design.jpg`,
 
   // Philosophy section left image (beside "Enhancing the Texture of Spaces")
   interiorDivider: `${base}photos/3d-rendering-white-minimal-kitchen-with-wood-decoration.jpg`,
@@ -63,9 +63,6 @@ export const images = {
     `${base}gallery/18.png`,
     `${base}gallery/19.png`,
     `${base}gallery/21.png`,
-    `${base}photos/minimalist-kitchen-interior-design.jpg`,
-    `${base}photos/3d-rendering-white-minimal-kitchen-with-wood-decoration.jpg`,
-    `${base}photos/beautiful-shot-modern-house-kitchen-dining-room.jpg`,
   ]
 };
 

@@ -16,9 +16,6 @@ const galleryItems = [
   { category: 'Residential', title: 'Built-in Wardrobe with Glass Doors' },
   { category: 'Interior', title: 'Glass Display Cabinet Installation' },
   { category: 'Interior', title: 'Aluminum Frame Glass Doors' },
-  { category: 'Kitchen', title: 'Minimalist Kitchen Design' },
-  { category: 'Kitchen', title: 'Glass Cabinet with Wine Storage' },
-  { category: 'Kitchen', title: 'Modern Kitchen & Dining' },
 ];
 
 export default function Gallery() {
