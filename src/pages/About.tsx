@@ -27,15 +27,15 @@ export default function About() {
   return (
     <MainLayout>
       {/* Hero Section: Image Left, Text Right */}
-      <section className="pt-32 pb-20 bg-bg-body relative overflow-hidden">
+      <section className="pt-28 sm:pt-32 pb-12 sm:pb-20 bg-bg-body relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="relative aspect-[4/5] w-full overflow-hidden rounded-sm group"
+              className="relative aspect-[4/3] sm:aspect-[4/5] w-full overflow-hidden rounded-sm group"
             >
               <img
                 src={images.aboutHero}
@@ -58,11 +58,11 @@ export default function About() {
                 <span className="text-[10px] font-mono uppercase tracking-widest text-accent-blue">About MetalSea</span>
               </div>
               
-              <h1 className="text-4xl md:text-6xl font-display font-light text-text-primary leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-light text-text-primary leading-tight">
                 Designed and Crafted for <span className="text-metal-gradient">Premium Spaces</span>
               </h1>
               
-              <div className="space-y-6 text-text-secondary text-lg leading-relaxed font-light">
+              <div className="space-y-4 sm:space-y-6 text-text-secondary text-base sm:text-lg leading-relaxed font-light">
                 <p>
                   Founded in 2023 and headquartered in Richmond Hill, Ontario, Canada, MetalSea specializes in designing and manufacturing high-quality aluminum cabinet door frames. Guided by our philosophy of "enhancing the texture of spaces", we provide versatile metal frame solutions for both residential and commercial interiors.
                 </p>
@@ -83,8 +83,8 @@ export default function About() {
       </section>
 
       {/* Features Section: 4 Columns */}
-      <section className="py-24 bg-bg-surface border-y border-glass-border">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-24 bg-bg-surface border-y border-glass-border">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -104,7 +104,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="glass-panel p-8 rounded-sm hover:bg-glass-highlight transition-colors duration-500 group"
+                className="glass-panel p-6 sm:p-8 rounded-sm hover:bg-glass-highlight transition-colors duration-500 group"
               >
                 <h3 className="text-xl font-display font-medium text-text-primary mb-4 group-hover:text-text-primary transition-colors">
                   {feature.title}
@@ -119,9 +119,9 @@ export default function About() {
       </section>
 
       {/* Facility Section: Text Left, Image Right */}
-      <section className="py-24 bg-bg-body relative overflow-hidden">
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-12 sm:py-24 bg-bg-body relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -166,7 +166,7 @@ export default function About() {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="order-1 lg:order-2 relative aspect-[4/5] w-full overflow-hidden rounded-sm group"
+              className="order-1 lg:order-2 relative aspect-[4/3] sm:aspect-[4/5] w-full overflow-hidden rounded-sm group"
             >
               <img
                 src={images.showroom}
@@ -182,9 +182,9 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-bg-surface relative overflow-hidden">
+      <section className="py-16 sm:py-32 bg-bg-surface relative overflow-hidden">
         <div className="absolute inset-0 bg-metal-gradient opacity-5 pointer-events-none" />
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-display font-light text-text-primary mb-6">
               Ready to Partner with Us?

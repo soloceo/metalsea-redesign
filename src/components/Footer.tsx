@@ -5,11 +5,11 @@ import { useTheme } from '../context/ThemeContext';
 export default function Footer() {
   const { theme } = useTheme();
   return (
-    <footer className="bg-bg-body border-t border-glass-border pt-24 pb-12 relative overflow-hidden">
+    <footer className="bg-bg-body border-t border-glass-border pt-12 sm:pt-24 pb-8 sm:pb-12 relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
-      
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-20">
           <div className="space-y-8">
             <Link to="/" className="text-2xl font-display font-medium tracking-tight text-text-primary flex items-center gap-3">
               <img

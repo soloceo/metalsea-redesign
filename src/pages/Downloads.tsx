@@ -14,25 +14,25 @@ export default function Downloads() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="pt-40 pb-20 bg-bg-body relative overflow-hidden min-h-[80vh] flex items-center">
+      <section className="pt-28 sm:pt-40 pb-12 sm:pb-20 bg-bg-body relative overflow-hidden min-h-[60vh] sm:min-h-[80vh] flex items-center">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
         <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-white/5 blur-[120px] rounded-full pointer-events-none" />
         
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center">
             {/* Left Content */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               className="text-left"
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-glass-border bg-glass-bg backdrop-blur-sm mb-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-glass-border bg-glass-bg backdrop-blur-sm mb-6 sm:mb-8">
                 <span className="w-1.5 h-1.5 rounded-full bg-text-primary animate-pulse" />
                 <span className="text-[10px] font-mono uppercase tracking-widest text-accent-gold">Resources</span>
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-display font-light text-text-primary mb-8 leading-tight">
+              <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-light text-text-primary mb-6 sm:mb-8 leading-tight">
                 Technical <span className="text-metal-gradient">Downloads</span>
               </h1>
               <p className="text-text-secondary text-lg mb-12 max-w-md leading-relaxed font-light">
@@ -68,8 +68,8 @@ export default function Downloads() {
       </section>
 
       {/* Resources List */}
-      <section className="py-20 bg-bg-surface border-t border-glass-border">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 bg-bg-surface border-t border-glass-border">
+        <div className="container mx-auto px-4 sm:px-6">
            <div className="text-center mb-16">
               <h2 className="text-3xl font-display font-light text-text-primary">Additional Documentation</h2>
            </div>

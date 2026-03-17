@@ -55,7 +55,7 @@ export default function Professionals() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className={`relative pt-40 pb-32 overflow-hidden transition-colors duration-500 ${isDark ? 'bg-black' : 'bg-bg-body'}`}>
+      <section className={`relative pt-28 sm:pt-40 pb-20 sm:pb-32 overflow-hidden transition-colors duration-500 ${isDark ? 'bg-black' : 'bg-bg-body'}`}>
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
            <img
@@ -71,7 +71,7 @@ export default function Professionals() {
           }`} />
         </div>
 
-        <div className="container mx-auto px-6 relative z-10 text-center">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -82,10 +82,10 @@ export default function Professionals() {
               <span className="text-[10px] font-mono uppercase tracking-widest text-accent-gold">Trade Program</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-display font-light mb-8 text-text-primary leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-light mb-6 sm:mb-8 text-text-primary leading-tight">
               Built for <span className="text-metal-gradient">Professionals</span>
             </h1>
-            <p className="text-xl text-text-secondary leading-relaxed mb-12 max-w-3xl mx-auto font-light">
+            <p className="text-base sm:text-xl text-text-secondary leading-relaxed mb-8 sm:mb-12 max-w-3xl mx-auto font-light px-2 sm:px-0">
               Partner with MetalSea for premium aluminum and glass cabinet door solutions. We serve contractors, architects, designers, and cabinet dealers with tailored support, competitive pricing, and reliable delivery.
             </p>
 
@@ -102,7 +102,7 @@ export default function Professionals() {
       {/* Professionals Grid */}
       <section className="py-20 bg-bg-body relative">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative -mt-32 z-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 relative -mt-16 sm:-mt-32 z-20">
             {sections.map((section, index) => (
               <motion.div
                 key={index}
@@ -133,8 +133,8 @@ export default function Professionals() {
       </section>
 
       {/* Process Section */}
-      <section className="py-32 bg-bg-surface border-y border-glass-border">
-        <div className="container mx-auto px-6">
+      <section className="py-16 sm:py-32 bg-bg-surface border-y border-glass-border">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -146,7 +146,7 @@ export default function Professionals() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-8 relative">
             {/* Connecting Line (Desktop) */}
             <div className="hidden md:block absolute top-12 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-glass-border to-transparent -z-10" />
 
@@ -159,8 +159,8 @@ export default function Professionals() {
                 transition={{ delay: index * 0.1 }}
                 className="flex flex-col items-center text-center group"
               >
-                <div className="w-24 h-24 rounded-full glass flex items-center justify-center mb-6 relative z-10 group-hover:border-glass-highlight transition-colors duration-500">
-                  <span className="text-3xl font-display font-light text-text-primary">{step.number}</span>
+                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full glass flex items-center justify-center mb-4 sm:mb-6 relative z-10 group-hover:border-glass-highlight transition-colors duration-500">
+                  <span className="text-2xl sm:text-3xl font-display font-light text-text-primary">{step.number}</span>
                 </div>
                 <h3 className="text-lg font-medium text-text-primary mb-3">{step.title}</h3>
                 <p className="text-text-secondary text-sm font-light">{step.description}</p>
@@ -171,9 +171,9 @@ export default function Professionals() {
       </section>
 
       {/* CTA Section (Reused from About) */}
-      <section className="py-32 bg-bg-body relative overflow-hidden">
+      <section className="py-16 sm:py-32 bg-bg-body relative overflow-hidden">
         <div className="absolute inset-0 bg-metal-gradient opacity-5 pointer-events-none" />
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-display font-light text-text-primary mb-6">
               Ready to Partner with Us?

@@ -21,25 +21,25 @@ const galleryItems = [
 export default function Gallery() {
   return (
     <MainLayout>
-      <section className="pt-40 pb-20 bg-bg-body min-h-screen relative">
+      <section className="pt-28 sm:pt-40 pb-12 sm:pb-20 bg-bg-body min-h-screen relative">
         <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
 
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-20 text-center"
+            className="mb-10 sm:mb-20 text-center"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-glass-border bg-glass-bg backdrop-blur-sm mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-text-primary animate-pulse" />
               <span className="text-[10px] font-mono uppercase tracking-widest text-accent-blue">Portfolio</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-display font-light text-text-primary leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-light text-text-primary leading-tight">
               Project <span className="text-metal-gradient">Gallery</span>
             </h1>
           </motion.div>
 
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 sm:gap-8 space-y-4 sm:space-y-8">
             {images.gallery.map((src, index) => {
               const item = galleryItems[index] || { category: `Project ${index + 1}`, title: 'Custom Application' };
               return (
@@ -63,7 +63,7 @@ export default function Gallery() {
                   />
 
                   {/* Glass Overlay on Hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex items-end p-8">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 flex items-end p-4 sm:p-8">
                     <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                       <span className="font-mono text-[10px] text-accent-gold uppercase tracking-widest block mb-2">{item.category}</span>
                       <h3 className="text-xl font-display font-medium text-white">{item.title}</h3>

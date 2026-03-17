@@ -68,13 +68,13 @@ export default function Home() {
           }`} />
         </div>
 
-        <div className="container mx-auto px-6 relative z-10 pt-20 pb-52 md:pb-32">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-20 pb-36 md:pb-32">
           <div className="max-w-5xl mx-auto text-center">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-6xl md:text-8xl lg:text-9xl font-display font-light tracking-tighter mb-8 leading-[0.9]"
+              className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-display font-light tracking-tighter mb-6 sm:mb-8 leading-[0.9]"
             >
               <span className={`block ${isDark ? 'text-metal-gradient' : 'text-metal-900'}`}>Precision.</span>
               <span className={`block ${isDark ? 'text-white/90' : 'text-metal-700'}`}>Purity.</span>
@@ -85,7 +85,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className={`text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-12 ${isDark ? 'text-gray-400' : 'text-text-secondary'}`}
+              className={`text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-8 sm:mb-12 px-2 sm:px-0 ${isDark ? 'text-gray-400' : 'text-text-secondary'}`}
             >
               Enhancing the texture of spaces through high-quality aluminum cabinet door frames and custom interior solutions.
             </motion.p>
@@ -94,7 +94,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-6"
+              className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4 sm:px-0"
             >
               <Link
                 to="/gallery"
@@ -122,7 +122,7 @@ export default function Home() {
             ? 'border-white/10 bg-black/40'
             : 'border-metal-200 bg-white/60'
         }`}>
-          <div className="container mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
             {[
               { label: 'Material', value: 'High-Strength Aluminum' },
               { label: 'Finish', value: 'Anodized / Powder Coat' },
@@ -131,7 +131,7 @@ export default function Home() {
             ].map((stat, index) => (
               <div key={index} className="text-center md:text-left">
                 <span className="block font-mono text-[10px] uppercase tracking-widest text-accent-gold/70 mb-1">{stat.label}</span>
-                <span className="text-text-primary font-display text-sm tracking-wide">{stat.value}</span>
+                <span className="text-text-primary font-display text-xs sm:text-sm tracking-wide">{stat.value}</span>
               </div>
             ))}
           </div>
@@ -139,12 +139,12 @@ export default function Home() {
       </section>
 
       {/* Features Grid - Glass Cards */}
-      <section className="py-32 bg-bg-body relative">
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col md:flex-row justify-between md:items-end gap-6 mb-20">
+      <section className="py-16 sm:py-32 bg-bg-body relative">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="flex flex-col md:flex-row justify-between md:items-end gap-6 mb-12 sm:mb-20">
             <div className="flex-shrink-0">
               <span className="font-mono text-xs text-accent-blue mb-4 block tracking-widest uppercase">System Components</span>
-              <h2 className="text-4xl md:text-6xl font-display font-light text-text-primary">Technical<br className="hidden md:inline" /> Specifications</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-light text-text-primary">Technical<br className="hidden md:inline" /> Specifications</h2>
             </div>
             <p className="text-text-secondary max-w-sm md:text-right font-light">
               Modular aluminum systems designed for seamless integration and limitless customization.
@@ -159,7 +159,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="glass-panel p-10 rounded-sm group hover:bg-glass-highlight transition-colors duration-500"
+                className="glass-panel p-6 sm:p-10 rounded-sm group hover:bg-glass-highlight transition-colors duration-500"
               >
                 <div className="flex justify-between items-start mb-8">
                   <div className="w-12 h-12 rounded-full bg-glass-bg flex items-center justify-center text-text-primary group-hover:bg-accent-gold group-hover:text-bg-body transition-all duration-500">
@@ -174,7 +174,7 @@ export default function Home() {
           </div>
 
           {/* Detail Showcase - Frosted Glass Overlay */}
-          <div className="mt-32 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="mt-16 sm:mt-32 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -220,7 +220,7 @@ export default function Home() {
       {/* Philosophy Section - Split with Glass Text */}
       <section className="bg-bg-surface border-y border-glass-border">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="relative h-[60vh] lg:h-auto overflow-hidden group">
+          <div className="relative h-[40vh] sm:h-[60vh] lg:h-auto overflow-hidden group">
             <img
               src={images.interiorDivider}
               alt="Premium Interior"
@@ -232,11 +232,11 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/20" />
           </div>
           
-          <div className="p-12 lg:p-24 flex flex-col justify-center bg-bg-surface relative overflow-hidden">
+          <div className="p-8 sm:p-12 lg:p-24 flex flex-col justify-center bg-bg-surface relative overflow-hidden">
             <div className="absolute inset-0 bg-metal-gradient opacity-5 pointer-events-none" />
             
             <span className="font-mono text-xs text-accent-gold mb-8 block tracking-widest uppercase">Our Philosophy</span>
-            <h2 className="text-4xl md:text-6xl font-display font-light mb-10 leading-tight text-text-primary">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-light mb-8 sm:mb-10 leading-tight text-text-primary">
               Enhancing the<br />Texture of Spaces
             </h2>
             <div className="space-y-8 text-text-secondary font-light leading-relaxed text-lg">
@@ -261,12 +261,12 @@ export default function Home() {
       </section>
 
       {/* CTA Section - Glass Card */}
-      <section className="py-32 bg-bg-body relative overflow-hidden">
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto glass-panel p-16 rounded-sm text-center relative overflow-hidden group">
+      <section className="py-16 sm:py-32 bg-bg-body relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="max-w-4xl mx-auto glass-panel p-8 sm:p-16 rounded-sm text-center relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-glass-highlight to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
             
-            <h2 className="text-4xl md:text-6xl font-display font-light mb-8 text-text-primary">Ready to Build?</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-display font-light mb-6 sm:mb-8 text-text-primary">Ready to Build?</h2>
             <p className="text-text-secondary mb-12 max-w-xl mx-auto font-light">
               Partner with MetalSea for premium aluminum and glass cabinet door solutions.
             </p>

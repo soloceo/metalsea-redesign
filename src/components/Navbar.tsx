@@ -113,14 +113,14 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed inset-0 bg-bg-body/95 backdrop-blur-3xl flex flex-col items-center justify-center gap-8 xl:hidden z-40"
+            className="fixed inset-0 bg-bg-body backdrop-blur-3xl flex flex-col items-center justify-center gap-5 sm:gap-8 xl:hidden z-40 overflow-y-auto py-20"
           >
             {mobileNavLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`text-3xl font-display font-light transition-colors ${
+                className={`text-2xl sm:text-3xl font-display font-light transition-colors ${
                   location.pathname === link.path ? 'text-text-primary' : 'text-text-secondary hover:text-text-primary'
                 }`}
               >
@@ -130,7 +130,7 @@ export default function Navbar() {
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="mt-8 px-10 py-4 border border-glass-border rounded-full text-text-primary font-mono uppercase tracking-widest hover:bg-text-primary hover:text-bg-body transition-all"
+              className="mt-6 sm:mt-8 px-8 sm:px-10 py-3 sm:py-4 border border-glass-border rounded-full text-text-primary font-mono text-sm uppercase tracking-widest hover:bg-text-primary hover:text-bg-body transition-all"
             >
               Get Quote
             </Link>
