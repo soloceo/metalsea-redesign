@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && rm -f dist/.gitignore && touch dist/.nojekyll && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
